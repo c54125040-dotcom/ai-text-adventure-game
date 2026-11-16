@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>規則｜AI 文字冒險遊戲網站</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>AI 文字冒險遊戲網站</h1>
+    <nav>
+      <a href="index.html">首頁</a>
+      <a href="game.html">遊戲</a>
+      <a href="rules.html">規則</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Reflection Agent</h2>
+      <p>
+        本網站的 AI 劇情生成流程採用 Reflection Agent 的概念。
+        系統不會只讓 AI 生成一次劇情就結束，而是分成三個階段：
+      </p>
+      <p>
+        Game Master 生成劇情初稿、劇情審查員檢查劇情，
+        Game Master 再依審查意見修正，最後輸出修正後劇情。
+      </p>
+    </section>
+
+    <section>
+      <h2>Game Master</h2>
+      <p>
+        Game Master 負責根據玩家行動與目前遊戲狀態，
+        生成符合遊戲主題的劇情。
+      </p>
+      <p>
+        它會描述玩家看到的東西、可能的新線索，
+        並在結尾提供下一步選項。
+      </p>
+    </section>
+
+    <section>
+      <h2>劇情審查員</h2>
+      <p>
+        劇情審查員負責檢查 Game Master 生成的劇情是否符合遊戲規則。
+      </p>
+      <p>
+        例如，審查員會確認劇情是否使用繁體中文、
+        是否以第二人稱描述玩家經歷、
+        是否維持一致的氛圍，
+        以及是否直接洩漏真相或答案。
+      </p>
+    </section>
+
+    <section>
+      <h2>遊戲規則</h2>
+      <p>
+        Game Master 需遵守以下規則：
+      </p>
+      <ul>
+        <li>使用台灣習慣的繁體中文。</li>
+        <li>以第二人稱「你」描述玩家經歷。</li>
+        <li>依照遊戲主題維持一致的氛圍。</li>
+        <li>不直接揭露真相、完整動機或最終答案。</li>
+        <li>不重複玩家已知道的資訊。</li>
+        <li>根據玩家行動提供新的細節或線索。</li>
+        <li>結尾提供 3 至 5 個合理的下一步選項。</li>
+        <li>全文約 150 至 250 字。</li>
+        <li>不新增與遊戲設定無關的人物、地點、對話或事件。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>結局設計</h2>
+      <p>
+        遊戲預計包含多種結局，例如真相結局、失敗結局與記憶喪失結局。
+      </p>
+      <p>
+        玩家的選擇會影響遊戲狀態，例如時間、線索、角色關係或記憶遺失，
+        進而決定最後進入哪一種結局。
+      </p>
+    </section>
+
+    <a class="button" href="index.html">回到首頁</a>
+  </main>
+
+  <footer>
+    <p>AI 文字冒險遊戲網站</p>
+  </footer>
+</body>
+</html>

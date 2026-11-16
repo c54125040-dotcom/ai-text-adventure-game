@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2:14：舊圖書館記憶消失事件</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>2:14：舊圖書館記憶消失事件</h1>
+    <nav>
+      <a href="index.html">首頁</a>
+      <a href="game.html">遊戲</a>
+      <a href="rules.html">規則</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>遊戲背景</h2>
+      <p>
+        期末週凌晨，成功大學校園流傳一則傳說：
+        舊圖書館的某間自習室會在凌晨 2:14 亮起燈。
+        據說，只要在那間教室留下寫著自己最害怕失敗的事情的紙條，
+        第二天早上，那件事就會「消失」。
+      </p>
+      <p>
+        你與朋友林雨晴決定在期末週凌晨前往調查。
+        你們發現紙條真的消失了，但每個寫紙條的人，
+        開始遺忘一件與紙條內容相關的事。
+      </p>
+    </section>
+
+    <section>
+      <h2>主要角色</h2>
+      <p>
+        <strong>林雨晴：</strong>你的朋友之一，曾經在自習室留下紙條，最近開始出現記憶缺口，神情顯得比平時更加防備。
+      </p>
+    </section>
+
+    <section>
+      <h2>遊戲玩法與規則</h2>
+      <ul>
+        <li>初始剩餘時間為 <strong>46 分鐘</strong>（距離凌晨 3:00 封館），記憶完整度為 <strong>100%</strong>。</li>
+        <li>每次行動會推進劇情並動態開啟新的調查選項；部分危險舉動會導致<strong>記憶遺失</strong>。</li>
+        <li>需透過多階段調查收集滿 <strong>5 項關鍵線索</strong> 並解鎖大門密碼，才能觸發<strong>真相結局</strong>。</li>
+        <li>若線索不足便強行離開、時間歸零或記憶完整度降至 0%，將進入失敗或記憶喪失結局。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>互動試玩片段</h2>
+      <div class="status-bar">
+        <p><strong>剩餘時間：</strong><span id="time-left">46</span> 分鐘 ｜ <strong>記憶完整度：</strong><span id="memory-left">100</span>%</p>
+        <p><strong>已收集線索（<span id="clue-count">2</span>/5）：</strong><span id="clue-list">半杯冷咖啡、撕掉一半的紙條</span></p>
+      </div>
+
+      <div id="story-container">
+        <p>
+          你站在成功大學舊圖書館的自習室裡，日光燈管發出微弱的電流聲。
+          桌上留著半杯早已冷掉的咖啡，以及一張被撕掉一半的紙條，
+          紙條邊緣只能看見「……考」兩個字。
+          不遠處的靠窗座位旁，林雨晴正低頭盯著自己的筆記本，眉頭緊鎖。
+        </p>
+        <p>
+          自習室的空氣悶熱而安靜，牆上的時鐘正指向凌晨 2:14，你決定先從哪裡開始調查？
+        </p>
+      </div>
+
+      <!-- 動態選項按鈕容器 -->
+      <div class="choices" id="choices-box"></div>
+
+      <div class="reflection-box" id="reflection-log">
+        <strong>[Reflection Agent 劇情檢核]</strong> Game Master 初稿已通過劇情審查員確認：維持第二人稱視角、字數落於 150–250 字區間、提供動態分支選項且無提前暴雷。
+      </div>
+
+      <p style="margin-top: 12px;">
+        <button class="button" id="reset-btn" onclick="resetGame()" style="display: none;">重新開始本局</button>
+      </p>
+    </section>
+
+    <section>
+      <h2>結局設計</h2>
+      <p>
+        遊戲包含<strong>真相結局</strong>、<strong>失敗結局</strong>與<strong>記憶喪失結局</strong>，將依據你的線索完整度、記憶狀態與最終抉擇決定走向。
+      </p>
+    </section>
+
+    <a class="button" href="index.html">回到首頁</a>
+  </main>
+
+  <footer>
+    <p>AI 文字冒險遊戲網站</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
